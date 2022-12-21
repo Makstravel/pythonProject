@@ -7,18 +7,18 @@ def check_email(m):
     alf = 0
     simv = 0
     for i in m:
-        if i.isalpha():
+        if i.islower():
            sm+=1
         if i.isdigit():
             dig +=1
         if i.isupper():
            alf +=1
-        if '@' in i and '.' in i and '_' in i:
+        if '@' in i and '.' in i:
             simv +=1
-    if sm > 0 or dig> 0 or alf> 0 or simv > 0:
+    if sm > 0 and dig >=0 and alf> 0 and simv > 0:
          print('ДА')
     else:
         print('НЕТ')
 
 
-check_email('maks@gmail.com')
+check_email('sc_lib@list.ru')
