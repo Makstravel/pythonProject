@@ -1,11 +1,12 @@
 # This is a study Python script.
-def chetn(x):
-    return x%2==0
+import turtle
+myTurtle = turtle().Turtle()
+myWin = turtle.Screen()
 
+def drawSpiral(myTurtle, linelen):
+    myTurtle.forward(linelen)
+    myTurtle.right(90)
+    drawSpiral(myTurtle, linelen-10)
+drawSpiral(myTurtle, linelen-10)
+myWin.exitonclick()
 
-while True:
-    x = int(input())
-    if x==1:
-        break
-    if chetn(x):
-        print(x)
