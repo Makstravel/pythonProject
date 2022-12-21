@@ -21,4 +21,4 @@ def check_email(m):
         print('НЕТ')
 
 
-check_email('sc_lib@list.ru')
+check_email(input())
