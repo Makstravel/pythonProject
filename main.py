@@ -21,4 +21,4 @@ def check_email(m):
         print('НЕТ')
 
 
-check_email(input())
+check_email('maks@gmail.com')
